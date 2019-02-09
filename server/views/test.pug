@@ -1,0 +1,12 @@
+extends template/theme.pug
+include ../../node_modules/jade-bootstrap/components/icons
+
+block content
+  h1 Tests
+  .jumbotron.translucent
+    each result in results
+      +panel(result.name, (result.passing) ? "success" : "danger")
+        if result.passing
+          +icon("check")
+        if !result.passing
+          +icon("unchecked")

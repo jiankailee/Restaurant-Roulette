@@ -1,0 +1,29 @@
+{
+  "name": "Restaurant-Roulette",
+  "version": "0.0.1",
+  "description": "Bite the bullet.",
+  "repository": {
+    "type": "git",
+    "url": "https://git.linux.iastate.edu/319Spring18/A4.git"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "express": "latest",
+    "glyphicons": "^0.2.0",
+    "jade-bootstrap": "^1.0.14",
+    "jquery": "^3.2.1",
+    "jquery-validation": "^1.17.0",
+    "opn": "^5.3.0",
+    "pug": "^2.0.0-rc.4",
+    "yamljs": "^0.3.0",
+    "yelp-fusion": "^2.0.3"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

@@ -1,0 +1,80 @@
+body{
+ background-image: url(../img/menu-restaurant-vintage-table.jpg);
+ background-size: cover;
+}
+
+/*the h1 in the box*/
+.container h1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 3%;
+    letter-spacing: 2px;
+    margin: 0
+}
+
+/* This contains the submission, map, and result */
+/* .container {
+
+} */
+
+/* There is probably a better way to access this. But this contains
+  the form. To access each submission entry box it would be the
+  .term or .location or .submit*/
+/* .container .jumbotron .post {
+
+} */
+
+h2{
+  font-weight: bold;
+}
+
+form{
+  text-align: center;
+  margin: 5% 5%;
+  /* background-color: : white; */
+}
+.translucent{
+  background: rgba(196, 196, 196, 0.5);
+}
+
+/*Slideshow images*/
+#slideshow {
+  border-radius: 10%;
+}
+
+p {
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+a {
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/*The words "term" and "location"*/
+form p{
+  font-size: 40px;
+  display: inline;
+  font-weight: normal;
+  font-family:Sans-serif;
+  padding: 0 20px 0 10px;
+}
+p {
+  font-size: 23px;
+}
+input{
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 0 10% 0 10% 0;
+  border: none;
+}
+input:focus{
+  outline: none;
+}

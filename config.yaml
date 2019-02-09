@@ -1,0 +1,23 @@
+routes:
+  path:           ''
+  controller:     Index
+  action:         index
+
+  children:
+  - path:           'test'
+    controller:     Test
+    action:         test
+managerPipeline:
+- route
+- controller
+- globals
+- plugin
+- request
+plugins:
+- navbar
+- yelp
+static:
+- jquery/dist
+- bootstrap/dist/css
+- bootstrap/dist/js
+port:             8080

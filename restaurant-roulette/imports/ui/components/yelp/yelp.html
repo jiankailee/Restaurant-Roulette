@@ -1,0 +1,43 @@
+<template name="yelp">
+  <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  <h2 class="title">Restaurant Roulette</h2>
+  <form class="yelp-search">
+    <input class="search-list" type="text" name="term" value="" placeholder="Term" required>
+    <input class="search-list" type="text" name="location" value="" placeholder="Location" required>
+    <input class="submit-button" type="submit" name="submit" value="Roulette!">
+  </form>
+  {{#each business}}
+    <div class="card">
+      {{#each photos}}
+        <img src={{this}} alt="good mood food" style="width:300px;height:300px;"><p></p>
+      {{/each}}
+
+      <p>Rating: {{rating}} stars out of 5</p>
+      <p>Name: {{name}}</p>
+      <p>City: {{location.city}}</p>
+      <p>Phone Number: {{phone}}</p>
+    </div>
+      <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: {{coordinates.latitude}}, lng: {{coordinates.longitude}}};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS-5L7JUs6L0LiF-8vdiUT_TZZpgBtBm4&callback=initMap">
+    </script>
+  {{/each}}
+</template>
