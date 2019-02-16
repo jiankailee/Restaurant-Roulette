@@ -20,4 +20,4 @@ static:
 - jquery/dist
 - bootstrap/dist/css
 - bootstrap/dist/js
-port:             8080
+port:             3000

@@ -42,6 +42,6 @@ var runManagerPipeline = managers.reduce((f, g) => (x) => g(f(x))); //compose ma
 runManagerPipeline(serverState);
 delete config.managerPipeline;
 
-app.listen(config.port, () => {});
+app.listen(config.port||process.env.PORT, () => {});
 
 console.log(`Starting on port localhost:${config.port}.`);
